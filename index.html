@@ -8,8 +8,16 @@
 </head>
 <body>
     <h1>To Do List</h1>
-    <h4>Go to GYM</h4>
-    <h4>Do DSA</h4>
+    <div>
+        <div id="todo_1" style="display : flex">
+            <h4>1. Go to GYM</h4>
+            <button onclick="deleteTodo(1)">Delete</button>
+        </div>
+        <div id="todo_2" style="display : flex">
+            <h4>2. Do DSA</h4>
+            <button onClick="deleteTodo(2)">Delete</button>
+        </div>
+    </div>
 
     <div>
         <input type="text" placeholder="Add your ToDo here" />

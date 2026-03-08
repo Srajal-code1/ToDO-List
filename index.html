@@ -9,11 +9,11 @@
 <body>
     <h1>To Do List</h1>
     <div>
-        <div id="todo_1" style="display : flex">
+        <div id="todo-1" style="display : flex" >
             <h4>1. Go to GYM</h4>
             <button onclick="deleteTodo(1)">Delete</button>
         </div>
-        <div id="todo_2" style="display : flex">
+        <div id="todo-2" style="display : flex">
             <h4>2. Do DSA</h4>
             <button onClick="deleteTodo(2)">Delete</button>
         </div>
@@ -22,7 +22,14 @@
     <div>
         <input type="text" placeholder="Add your ToDo here" />
         <button>Add ToDo</button>
-
     </div>
 </body>
+
+
+<script>
+    function deleteTodo(index) {
+        const element = document.getElementById("todo-" + index);
+        element.parentNode.removeChild(element);
+    }
+</script>
 </html>

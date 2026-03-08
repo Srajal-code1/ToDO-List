@@ -1,0 +1,20 @@
+<!-- Writing in the placeholder of the ToDo list to get the same output -->
+
+<html>
+    <body>
+        <input type="text" placeholder="Add a ToDo"/>
+        <button onclick="addTodo()">Add Todo!!</button>
+    </body>
+
+    <script>
+        function addTodo() {
+            const inputElement = document.querySelector("input");
+            const value = inputElement.value;
+
+            const newDivEl = document.createElement("div");
+            newDivEl.innerHTML = value;
+
+            document.querySelector("body").appendChild(newDivEl)
+        }
+    </script>
+</html>
